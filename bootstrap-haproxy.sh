@@ -17,7 +17,8 @@
     cat > /etc/default/haproxy << EOF
     ENABLED=1
     EOF
-     
+    # HAPROXY ######################################################################
+   
     echo -e "-- Configuring HAProxy\n"
     cat > /etc/haproxy/haproxy.cfg << EOF
     global
