@@ -14,12 +14,12 @@
     apt-get install -y haproxy > /dev/null 2>&1
      
     echo -e "-- Enabling HAProxy as a start-up deamon\n"
-    cat > /etc/default/haproxy <<-EOF
+    cat > /etc/default/haproxy << EOF
     ENABLED=1
     EOF
      
     echo -e "-- Configuring HAProxy\n"
-    cat > /etc/haproxy/haproxy.cfg <<-EOF
+    cat > /etc/haproxy/haproxy.cfg << EOF
     global
         log /dev/log local0
         log localhost local1 notice
